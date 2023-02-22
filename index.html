@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 야구 게임</title>
+  <link rel="stylesheet" href="main.css">
+  <script defer src="main.js"></script>
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+  <div class="title">숫자 야구 게임</div>
+  <button class="rules">게임 방법</button>
+  <div class="game-rules">
+    <ul>
+      <li>숫자 1~9 중 4개의 숫자를 입력한다.</li>
+      <li><span>숫자 + 자릿수</span>가 같으면 <span>스트라이크(strike)</span>, <span>숫자</span>만 같으면 <span>볼(ball)</span><br>(예) 답 '3142' -> 내가 입력한 값 '1234' ->  0 스트라이크, 4 볼</li>
+      <li>4개의 숫자가 모두 틀리면 <span>🙅🏻‍♂️ 아웃(out) 🙅🏻‍♂️</span></li>
+      <li>4개의 숫자가 모두 맞으면 <span>⚾️ 홈런(Home run) ⚾️</span></li>
+      <li>기회는 <span>총 10번!</span></li>
+      <li>단, <span>아웃이 3번</span>이면 <span>쓰리아웃</span>으로 실패!</li>
+    </ul>
+    <button class="game-start">게임 시작</button>
+  </div>
+  <form id="form">
+    <input id="input" type="text" placeholder="숫자를 입력해 주세요.">
+    <button class="ok">확인</button>
+  </form>
+  <div id="logs">⚾️ 결과 ⚾️ <br><br></div>
+</body>
+</html>
